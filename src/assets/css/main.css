@@ -31,8 +31,9 @@ body {
 
 .navbar {
     display: inline-block;
+    margin: 0px;
     margin-top: 10px;
-    width: calc(100% - 80px);
+    width: calc(100% - 125px);
 }
 .menu-item {
     display: inline-block;
@@ -57,6 +58,10 @@ body {
 }
 .menu-link {
     display: inline-block;
+    border-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -64,8 +69,15 @@ body {
     width: 80px;
     text-align: center;
     vertical-align: middle;
+    margin: 0px;
     margin-left: 20px;
     transition-duration: 200ms;
+}
+.menu-link:hover {
+    cursor: pointer;
+    color: #ff0040;
+    border-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .main {

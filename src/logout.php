@@ -14,7 +14,7 @@
 
 <html>
     <head>
-        <title>Simple Filehost</title>
+        <title>Simple Filehost - Logging out...</title>
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/assets/css/main.css">
@@ -22,12 +22,16 @@
         <!-- Scripts -->
         <script src="/assets/js/jquery-3.6.3.min.js"></script>
         <script src="/assets/js/tools.js"></script>
+        <script src="/assets/js/logout.js"></script>
     </head>
     <body>
         <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/internal/header.php"; ?>
         <div class="main">
             <div class="main-body">
-                
+                <p>Logging out...</p>
+                <div id="error" class="error">
+                    <span id="error-text" class="error-text"></span>
+                </div>
             </div>
         </div>
         <div class="footer">

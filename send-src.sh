@@ -5,13 +5,13 @@
 # Simply script that aliases rsync to send the updated files to the remote server.
 #
 
-# Read the hostname
+# Read the hostname & remote directory (in one go)
 if [[ "$#" -ne "1" ]]; then
-    echo "Usage: $0 <SSH hostname>" 2>&1
+    echo "Usage: $0 <SSH remote>" 2>&1
     exit 1
 fi
-hostname="$1"
+remote="$1"
 
 # Now call rsync
-rsync -avr --progress ./src/* "$hostname":/var/www/fs.timinc.nl/
+rsync -avr --progress ./src/* "$remote"
 
