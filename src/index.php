@@ -27,7 +27,12 @@
         <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/internal/header.php"; ?>
         <div class="main">
             <div class="main-body">
-                
+                <div class="path">
+                    
+                </div>
+                <div class="files">
+                    <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/internal/files.php"; ?>
+                </div>
             </div>
         </div>
         <div class="footer">
