@@ -150,6 +150,20 @@ body {
     color: #ff0000;
 }
 
+.path {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: solid 2px #ff0040;
+    border-radius: 5px;
+    height: 50px;
+}
+.path-elem {
+    display: inline-block;
+    background-color: #ff0040;
+    border-radius: 5px;
+    height: 100%;
+}
+
 .files {
     background-color: #bbbbbb;
     width: 100%;

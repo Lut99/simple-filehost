@@ -20,18 +20,28 @@
         <link rel="stylesheet" href="/assets/css/main.css">
 
         <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/56b17fd047.js" crossorigin="anonymous"></script>
         <script src="/assets/js/jquery-3.6.3.min.js"></script>
         <script src="/assets/js/tools.js"></script>
+        <script src="/assets/js/redirect.js"></script>
     </head>
     <body>
         <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/internal/header.php"; ?>
         <div class="main">
             <div class="main-body">
                 <div class="path">
-                    
+                    <?php
+                        // Get the path to show
+                        $path = $_POST["path"];
+                        if (substr($path, 0, 1) !== "/") { $path = "/" . $path; }
+
+                        // Show the root always
+                        // echo("<span class=\"path-elem\"><i class=\"fa-solid fa-hard-drive fa-xl\" style=\"color: #ffffff;\"></i></span>");
+                        echo("<span class=\"path-elem\"><i class=\"fa-solid fa-hard-drive fa-xl\" style=\"margin-top: auto; margin-bottom: auto;\"></i></span>");
+                    ?>
                 </div>
                 <div class="files">
-                    <?php require $_SERVER["DOCUMENT_ROOT"] . "/php/internal/files.php"; ?>
+                    
                 </div>
             </div>
         </div>
